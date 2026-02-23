@@ -1,0 +1,12 @@
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        sort(nums.begin(),nums.end());   // C++ librabry for sorting the numbers from beginning to the end
+
+        for(int i=1;i<nums.size();i++){  // always start eith i=1
+            if(nums[i]==nums[i-1])       
+                return true;
+            }
+            return false;
+    }
+};
