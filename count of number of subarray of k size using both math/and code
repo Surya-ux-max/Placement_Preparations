@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    int k;
+    cin>>n>>k;
+    
+    int arr[n];
+    
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int count=0;
+    for(int i=0;i<=n-k;i++){
+        count++;
+    }
+    cout<<"Number of subarray of size k is"<<count;
+}
+
+---------------------------------------------------------------
+  MATH SOLUTION -
+  #include<iostream>
+using namespace std;
+int main(){
+    int n;
+    int k;
+    cin>>n>>k;
+    
+    int arr[n];
+    
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int count=0;
+    // for(int i=0;i<=n-k;i++){
+    //     count++;
+    // }
+    // cout<<"Number of subarray of size k is"<<count;
+    
+    int size = n-k+1;
+    cout<<"number of subarray of size k is "<<size;
+}
